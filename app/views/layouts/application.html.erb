@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SBbs</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <div class="header">
+    <a href="http://localhost:3000/boards"><img src="https://common.cdn.finc.com/onboarding/images/bbslogo.png" alt="logo" width="150px"></a>
+  </div>
+
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<h1>投稿詳細</h1>
+
+
+<p>
+  <strong>スレッドID:</strong>
+  <%= @message.board_id %>
+
+</p>
+
+<p>
+  <strong>投稿者:</strong>
+  <%= @message.creator_name %>
+</p>
+
+<p>
+  <strong>投稿内容:</strong>
+  <%= @message.message %>
+</p>
+
+
+<%= link_to '投稿一覧に戻る', board_messages_path %>

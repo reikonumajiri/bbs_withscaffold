@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<h1>スレッド詳細</h1>
+
+<p>
+  <strong>タイトル：</strong>
+  <%= @board.title %>
+</p>
+
+<p>
+  <strong>作成者：</strong>
+  <%= @board.creator_name %>
+</p>
+
+<%= link_to '編集', edit_board_path(@board) %>
+<%= link_to '一覧に戻る', boards_path %>
